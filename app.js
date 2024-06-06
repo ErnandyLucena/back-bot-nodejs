@@ -67,7 +67,6 @@ app.put('/pedidos/:id', (req, res) => {
   });
 });
 
-// Rota para deletar um pedido existente
 app.delete('/pedidos/:id', (req, res) => {
   const { id } = req.params;
   const query = 'DELETE FROM pedidos WHERE id = ?';
